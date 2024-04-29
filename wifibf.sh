@@ -30,7 +30,7 @@ clear
 cat $FILE_DB | while read LINE;
 do
 
-        # The target will be a SSID
+        # The target will be a SSID 
         TARGET=`echo ${LINE} | cut -d ";" -f 2 | grep -v "^$"`
 
         # The password will be the last fuor octets in upper case.
